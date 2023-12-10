@@ -178,7 +178,7 @@ async def update(event):
 async def _(event):
 
     await event.edit("**جاري تجميع النقاط في بوت المليار**")
-    joinu = await berothon(JoinChannelRequest('Sero_Bots'))
+    joinu = await berothon(JoinChannelRequest('Repethone'))
     channel_entity = await berothon.get_entity(bot_username)
     await berothon.send_message(bot_username, '/start')
     await asyncio.sleep(4)
