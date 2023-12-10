@@ -40,6 +40,7 @@ bot_username = '@eeobot'
 bot_usernamee = '@A_MAN9300BOT'
 bot_usernameee = '@MARKTEBOT'
 bot_usernameeee = '@xnsex21bot'
+bot_usernameeeee = '@DamKombot'
 bot_usernn = '@MHDN313bot'
 y = datetime.datetime.now().year
 m = datetime.datetime.now().month
@@ -174,6 +175,48 @@ async def update(event):
     await berothon.disconnect()
     await berothon.send_message("me", "`اكتملت اعادة تشغيل السورس !`")
 
+@berothon.on(events.NewMessage(outgoing=True, pattern=".تجميع دعمكم"))
+async def _(event):
+
+    await event.edit("**جاري تجميع النقاط في بوت دعمكم للتمويل**")
+    joinu = await berothon(JoinChannelRequest('repethone'))
+    channel_entity = await berothon.get_entity(bot_usernameeeee)
+    await berothon.send_message(bot_usernameeeee, '/start')
+    await asyncio.sleep(4)
+    msg0 = await berothon.get_messages(bot_usernameeeee, limit=1)
+    await msg0[0].click(2)
+    await asyncio.sleep(4)
+    msg1 = await berothon.get_messages(bot_usernameeeee, limit=1)
+    await msg1[0].click(0)
+
+    chs = 1
+    for i in range(100):
+        await asyncio.sleep(4)
+
+        list = await berothon(GetHistoryRequest(peer=channel_entity, limit=1,
+                                               offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
+        msgs = list.messages[0]
+        if msgs.message.find('لا يوجد قنوات في الوقت الحالي , قم يتجميع النقاط بطريقه مختلفه') != -1:
+            await berothon.send_message(event.chat_id, f"**تم الانتهاء من التجميع | الحمدالله رب العالمين**")
+
+            break
+        url = msgs.reply_markup.rows[0].buttons[0].url
+        try:
+            try:
+                await berothon(JoinChannelRequest(url))
+            except:
+                bott = url.split('/')[-1]
+                await berothon(ImportChatInviteRequest(bott))
+            msg2 = await berothon.get_messages(bot_usernameeeee, limit=1)
+            await msg2[0].click(text='تحقق')
+            chs += 1
+            await event.edit(f"**تم الانضمام في {chs} قناة**")
+        except:
+            msg2 = await berothon.get_messages(bot_usernameeeee, limit=1)
+            await msg2[0].click(text='التالي')
+            chs += 1
+            await event.edit(f"**القناة رقم {chs}**")
+    await berothon.send_message(event.chat_id, "**تم الانتهاء من التجميع | الحمدالله رب العالمين**")
 @berothon.on(events.NewMessage(outgoing=True, pattern=".تجميع المليار"))
 async def _(event):
 
