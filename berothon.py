@@ -100,7 +100,7 @@ async def _(event):
     end = datetime.datetime.now()
     ms = (end - start).microseconds / 1000
     await event.edit(f'''
-**============= • 🔱 𝐒𝐎𝐔𝐑𝐄  𝐑𝐄𝐏𝐄𝐓𝐎𝐍𝐄 🔱 • ============
+**===== • 🔱 𝐒𝐎𝐔𝐑𝐄  𝐑𝐄𝐏𝐄𝐓𝐎𝐍𝐄 🔱 • ====
  ► 𝐒𝐎𝐔𝐑𝐄  𝐑𝐄𝐏𝐄𝐓𝐎𝐍𝐄
  ► PING : `{ms}`
  ► DATE : `{m9zpi}`
