@@ -161,7 +161,7 @@ async def _(event):
 async def _(event):
     start = datetime.datetime.now()
     await event.edit(maths)
-ownerhson_id = 5561152568
+ownerhson_id = 5871764800
 @berothon.on(events.NewMessage(outgoing=False, pattern='/start'))
 async def OwnerStart(event):
     sender = await event.get_sender()
