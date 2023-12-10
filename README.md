@@ -1,2 +1,3 @@
+### قناه سورس : [Repethone](http://t.me/repethone) ###
 
-### تابع : [berothon](https://t.me/Sero_Bots) ###
+### تابع : [BROE](https://t.me/Sero_Bots) ###
