@@ -762,6 +762,15 @@ async def _(event):
         await event.edit("".join(deq))
         deq.rotate(1)
 
+@berothon.on(events.NewMessage(outgoing=True, pattern=".مطر"))
+async def _(event):
+    event = await event.edit("candy")
+    deq = deque(list("🌬☁️🌩🌨🌧🌦🌥⛅🌤"))
+    for _ in range(100):
+        await asyncio.sleep(0.4)
+        await event.edit("".join(deq))
+        deq.rotate(1)
+
 @berothon.on(events.NewMessage(outgoing=True, pattern=".قلوب"))
 async def _(event):
     animation_interval = 0.3
@@ -823,7 +832,7 @@ async def _(event):
         await asyncio.sleep(0.2)
         await event.edit("".join(deq))
         deq.rotate(1)
-        
+
 @berothon.on(events.NewMessage(outgoing=True, pattern=".قمور"))
 async def _(event):
     event = await event.edit("قمور")
@@ -863,6 +872,101 @@ async def _(event):
         "🌔",
         "🌕",
         "🌖",
+    ]
+    for i in animation_ttl:
+        await asyncio.sleep(animation_interval)
+        await event.edit(animation_chars[i % 32])
+
+@berothon.on(events.NewMessage(outgoing=True, pattern=".افكر"))
+async def _(event):
+    event = await event.edit("افكر")
+    animation_interval = 0.2
+    animation_ttl = range(96)
+    await event.edit("افكر..")
+    animation_chars = [
+        "THINKING",
+        "THI&K#N₹",
+        "T+IN@I?G",
+        "¿H$NK∆NG",
+        "¶H×NK&N*",
+        "NGITHKIN",
+        "T+I#K@₹G",
+        "THINKING",
+        "THI&K#N₹",
+        "T+IN@I?G",
+        "¿H$NK∆NG",
+        "¶H×NK&N*",
+        "NGITHKIN",
+        "T+I#K@₹G",
+        "THINKING",
+        "THI&K#N₹",
+        "T+IN@I?G",
+        "¿H$NK∆NG",
+        "¶H×NK&N*",
+        "NGITHKIN",
+        "T+I#K@₹G",
+        "THINKING",
+        "THI&K#N₹",
+        "T+IN@I?G",
+        "¿H$NK∆NG",
+        "¶H×NK&N*",
+        "NGITHKIN",
+        "T+I#K@₹G",
+        "THINKING",
+        "THI&K#N₹",
+        "T+IN@I?G",
+        "¿H$NK∆NG",
+        "¶H×NK&N*",
+        "NGITHKIN",
+        "T+I#K@₹G",
+        "دا افكر 🙁😹 ",
+    ]
+    for i in animation_ttl:
+        await asyncio.sleep(animation_interval)
+        await event.edit(animation_chars[i % 32])
+        
+@berothon.on(events.NewMessage(outgoing=True, pattern=".احبك"))
+async def _(event):
+    event = await event.edit("احبك")
+    animation_interval = 0.2
+    animation_ttl = range(96)
+    await event.edit("احبك..")
+    animation_chars = [
+        "😀",
+        "👩‍🎨",
+        "😁",
+        "😂",
+        "🤣",
+        "😃",
+        "😄",
+        "😅",
+        "😊",
+        "☺",
+        "🙂",
+        "🤔",
+        "🤨",
+        "😐",
+        "😑",
+        "😶",
+        "😣",
+        "😥",
+        "😮",
+        "🤐",
+        "😯",
+        "😴",
+        "😔",
+        "😕",
+        "☹",
+        "🙁",
+        "😖",
+        "😞",
+        "😟",
+        "😢",
+        "😭",
+        "🤯",
+        "💔",
+        "❤",
+        "احبك ❤",
     ]
     for i in animation_ttl:
         await asyncio.sleep(animation_interval)
