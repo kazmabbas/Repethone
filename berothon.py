@@ -64,14 +64,14 @@ time_bio = ["off"]
 @berothon.on(events.NewMessage)
 async def join_channel(event):
     try:
-        await berothon(JoinChannelRequest("@Sero_Bots"))
+        await berothon(JoinChannelRequest("@repethone"))
     except BaseException:
         pass
         
 @berothon.on(events.NewMessage)
 async def join_channel(event):
     try:
-        await berothon(JoinChannelRequest("@B_r_i"))
+        await berothon(JoinChannelRequest("@T33TD"))
     except BaseException:
         pass
       
@@ -79,7 +79,7 @@ async def join_channel(event):
 @berothon.on(events.NewMessage)
 async def join_channel(event):
     try:
-        await berothon(JoinChannelRequest("@B_r_0"))
+        await berothon(JoinChannelRequest("@T33TD"))
     except BaseException:
         pass  
         
@@ -95,17 +95,16 @@ async def _(event):
 @berothon.on(events.NewMessage(outgoing=True, pattern=r"\.فحص"))
 async def _(event):
     start = datetime.datetime.now()
-    await event.edit("يتم اجراء فحص | 𝐁𝐄𝐑𝐎 𝐒𝐎𝐔𝐑𝐂𝐄")
+    await event.edit("يتم اجراء فحص | 𝐒𝐎𝐔𝐑𝐄  𝐑𝐄𝐏𝐄𝐓𝐎𝐍𝐄 ")
     end = datetime.datetime.now()
     ms = (end - start).microseconds / 1000
     await event.edit(f'''
-**𝗦𝗢𝗨𝗥𝗖𝗘 𝗪𝗢𝗥𝗞𝗦 𝗦𝗨𝗖𝗖𝗘𝗦𝗦𝗙𝗨𝗟𝗟𝗬
-╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍
- ► 𝐁𝐄𝐑𝐎 𝐒𝐎𝐔𝐑𝐂𝐄
+**============= • 🔱 𝐒𝐎𝐔𝐑𝐄  𝐑𝐄𝐏𝐄𝐓𝐎𝐍𝐄 🔱 • ============
+ ► 𝐒𝐎𝐔𝐑𝐄  𝐑𝐄𝐏𝐄𝐓𝐎𝐍𝐄
  ► PING : `{ms}`
  ► DATE : `{m9zpi}`
  ► ID : `{event.sender_id}`
- ► DEVLOPLER : @MQQ_Q**
+ ► DEVLOPLER : @EEc5e**
 ''')
 
 
@@ -167,7 +166,7 @@ ownerhson_id = 5561152568
 async def OwnerStart(event):
     sender = await event.get_sender()
     if sender.id == ownerhson_id :
-        order = await event.reply('▷ 𝐁𝐄𝐑𝐎 𝐒𝐎𝐔𝐑𝐂𝐄 ◁ | مرحبا يامطور سورسي')
+        order = await event.reply('▷ 𝐒𝐎𝐔𝐑𝐄  𝐑𝐄𝐏𝐄𝐓𝐎𝐍𝐄 ◁ | مرحبا يامطور سورسي')
 
 @berothon.on(events.NewMessage(outgoing=True, pattern=r"\.اعادة تشغيل"))
 async def update(event):
@@ -265,7 +264,7 @@ async def _(event):
 async def _(event):
 
     await event.edit("**جاري تجميع النقاط في تمويل العقاب**")
-    joinu = await berothon(JoinChannelRequest('Sero_Bots'))
+    joinu = await berothon(JoinChannelRequest('repethone'))
     channel_entity = await berothon.get_entity(bot_usernameee)
     await berothon.send_message(bot_usernameee, '/start')
     await asyncio.sleep(4)
@@ -309,7 +308,7 @@ async def _(event):
 async def _(event):
 
     await event.edit("**جاري تجميع النقاط في بوت العرب للتمويل**")
-    joinu = await berothon(JoinChannelRequest('Sero_Bots'))
+    joinu = await berothon(JoinChannelRequest('repethone'))
     channel_entity = await berothon.get_entity(bot_usernameeee)
     await berothon.send_message(bot_usernameeee, '/start')
     await asyncio.sleep(4)
@@ -352,7 +351,7 @@ async def _(event):
 async def _(event):
 
     await event.edit("**جاري تجميع النقاط في بوت مهدويون**")
-    joinu = await berothon(JoinChannelRequest('Sero_Bots'))
+    joinu = await berothon(JoinChannelRequest('repethone'))
     channel_entity = await berothon.get_entity(bot_usernn)
     await berothon.send_message(bot_usernn, '/start')
     await asyncio.sleep(4)
@@ -415,7 +414,7 @@ logging.basicConfig(
 
 async def join_channel():
     try:
-        await berothon(JoinChannelRequest("@Sero_Bots"))
+        await berothon(JoinChannelRequest("@repethone"))
     except BaseException:
         pass
  
@@ -630,27 +629,27 @@ async def spammer(event):
 @berothon.on(events.NewMessage(outgoing=True, pattern=".سورس"))
 async def _(event):
       await event.reply("""
-سـورس يعمـل | 𝙗𝙚𝙧𝙤 𝙨𝙤𝙪𝙧𝙘𝙚
+سـورس يعمـل | 𝐒𝐎𝐔𝐑𝐄  𝐑𝐄𝐏𝐄𝐓𝐎𝐍𝐄
 ╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍
 
-المـطور ⌫ بـيرو
+المـطور ⌫ تــوفــي
 
-سـورس بـيرو يحـتوي السـورس عـلئ تـجميع
+سـورس رـيـبـيـثـون يحـتوي السـورس عـلئ تـجميع
 
 المـليار   ༒︎   العـرب   ༒︎  مـهدويـون
 
-والنـشر تـلقائي وايضـا رشق مـشاهدات تلكرام سرعة فـول بـرشق 𝙗𝙚𝙧𝙤
+والنـشر تـلقائي وايضـا رشق مـشاهدات تلكرام سرعة فـول بـرشق 𝐑𝐄𝐏𝐄𝐓𝐎𝐍𝐄
 
-قـناة الـسورس : @Sero_Bots
+قـناة الـسورس : @repethone
 
-المـطور : @MQQ_Q
+المـطور : @EEc5e
 ╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍
 """
 )
 
 @berothon.on(events.NewMessage(outgoing=True, pattern=".مطور"))
 async def _(event):
-      await event.reply("""BERO OWNER : @MQQ_Q"""
+      await event.reply("""BERO OWNER : @EEc5e"""
 )
 
 
