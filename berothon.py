@@ -127,7 +127,7 @@ async def _(event):
     await event.edit(sec3)
 
 
-@berothon.on(events.NewMessage(outgoing=True, pattern=r"\.م4"))
+@berothon.on(events.NewMessage(outgoing=True, pattern=r"\.لاتعلب"))
 async def _(event):
     start = datetime.datetime.now()
     await event.edit(sec4)
@@ -138,27 +138,27 @@ async def _(event):
     await event.edit(sec5)
 
 
-@berothon.on(events.NewMessage(outgoing=True, pattern=r"\.اوامر النشر"))
+@berothon.on(events.NewMessage(outgoing=True, pattern=r"\.م6"))
 async def _(event):
     start = datetime.datetime.now()
     await event.edit(nashr)
 
-@berothon.on(events.NewMessage(outgoing=True, pattern=r"\.اوامر التكرار"))
+@berothon.on(events.NewMessage(outgoing=True, pattern=r"\.م7"))
 async def _(event):
     start = datetime.datetime.now()
     await event.edit(tkrar)
 
-@berothon.on(events.NewMessage(outgoing=True, pattern=r"\.اوامر الاذاعه"))
+@berothon.on(events.NewMessage(outgoing=True, pattern=r"\.م8"))
 async def _(event):
     start = datetime.datetime.now()
     await event.edit(broad)
 
-@berothon.on(events.NewMessage(outgoing=True, pattern=r"\.اوامر التسليه"))
+@berothon.on(events.NewMessage(outgoing=True, pattern=r"\.م4"))
 async def _(event):
     start = datetime.datetime.now()
     await event.edit(tslia)
 
-@berothon.on(events.NewMessage(outgoing=True, pattern=r"\.اوامر الرياضيات"))
+@berothon.on(events.NewMessage(outgoing=True, pattern=r"\.م9"))
 async def _(event):
     start = datetime.datetime.now()
     await event.edit(maths)
